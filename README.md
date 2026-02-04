@@ -36,5 +36,5 @@ helm template istiod istio/istiod \
   --set pilot.env.PILOT_ENABLE_PERSISTENT_SESSION_FILTER=true > ./${VERSION}/istiod.yaml
 ```
 
-# Verifique a variável de ambiente no deployment do istiod
+# VERFICAR SE A VARIAVEL DE AMBIENTE FOI CRIADA NO DEPLOYMENT DO ISTIOD PARA SESSÃO PERSISTENTES
 kubectl get deploy istiod -n istio-system -o yaml | grep PILOT_ENABLE_PERSISTENT_SESSION_FILTER -A1
