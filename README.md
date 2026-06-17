@@ -12,7 +12,7 @@ helm repo add istio https://istio-release.storage.googleapis.com/charts
 # UPDATE HELM CHART AND CREATE DIRECTORY
 ```sh
 helm repo update
-export VERSION=1.28.3
+export VERSION=1.28.8
 mkdir  ${VERSION}
 ```
 
